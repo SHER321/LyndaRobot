@@ -21,10 +21,10 @@ Hi {}, my name is {}!
 // I am an Anime themed group management bot with a lot of Special Features.
 You can find the list of available commands with /help.
 ==========================
--> [Dia's Repo](https://github.com/Ankith09/LyndaRobot)
--> Report [Dia Support](https://t.me/super_botz_support) if I go offline
+-> [Our Channel](https://t.me/ALL_MOVIES_LIABRARY)
+-> Group [Support Group](https://t.me/MOVIERG_NY) if I go offline
 ==========================
-`Maintained by` @super_botz
+`Maintained by` @ALL_MOVIES_LIABRARY
 
 """
 
@@ -33,9 +33,9 @@ Hey there! My name is *{}*.
 I'm a part of Eagle Union.
 Have a look at the following for an idea of some of \
 the things I can help you with.
-I'm managed by [Ankith_m](https://t.me/Ankith_m)
-Chatbot module from [TheRealPhoenixBot](https://github.com/rsktg/TheRealPhoenixBot.git)
-Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot)
+I'm managed by [N I K H I L](https://t.me/NGYNY)
+Join Our Channel [Channel](https://t.me/ALL_MOVIES_LIABRARY)
+Join Our Group [Group](https://t.me/MOVIERG_NY)
 *Main* commands available:
  - /start: start the bot
  - /help: PM's you this message.
@@ -49,12 +49,12 @@ Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LYNDA_IMG = "https://telegra.ph/file/35005c01182645232f2d3.jpg"
+K!NG_IMG = "https://https://telegra.ph/file/c93583f60f2f4186ae453.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Lynda is hosted on one of Digital Ocean Servers. \
 You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+There are two ways of supporting him; [Group](https://t.me/MOVIERG_NY), or [Channel](https://t.me/ALL_MOVIES_LIABRARY)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -143,9 +143,9 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="👥 Add Dia to your group", url="https://t.me/diatgbot?startgroup=new")],
-                [InlineKeyboardButton(text="🙋 Support Group", url="https://t.me/super_botz_support"), InlineKeyboardButton(text="🚫 Global Logs", url="https://t.me/gobalban_logs")],
-                [InlineKeyboardButton(text="❔ Help", callback_data="help_back"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/super_botz")]])
+                [[InlineKeyboardButton(text="👥 Add K!NG to your group", url="https://t.me/KINGtgbot?startgroup=new")],
+                [InlineKeyboardButton(text="🙋 Support Group", url="https://t.me/MOVIERG_NY"), InlineKeyboardButton(text="🔗 Our Channel", url="https://t.me/ALL_MOVIES_LIABRARY")],
+                [InlineKeyboardButton(text="❔ Help", callback_data="help_back"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/ALL_MOVIES_LIABRARY")]])
             update.effective_message.reply_photo(LYNDA_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=buttons)
@@ -379,7 +379,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1171354752 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
